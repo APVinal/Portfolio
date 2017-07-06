@@ -38,26 +38,6 @@ a{
   text-decoration: none;
 }
 
-.hamburger {
-    height: 25px;
-    width: 25px;
-    background-color: white;
-    border: 1px solid #eeeeef;
-    border-radius: 2px;
-    box-shadow: 0 0 2px #eeeeef;
-    margin-left: 5%;
-}
-
-.hamburger-stripe {
-    background-color: black;
-    height: 3px;
-    margin-bottom: 5px;
-}
-
-.top-hamburger-stripe{
-  margin-top:2.5px;
-}
-
 .nav-bar-content{
   list-style: none;
   display: flex;
@@ -134,4 +114,17 @@ a{
 
 .project {
   border-top: 1px solid #7AAFC1;
+  padding: 15px;
+}
+
+.project-stack{
+  list-style: none;
+}
+
+.project-stack-item{
+  font-weight: bold;
+}
+
+.project-link{
+  list-style: none;
 }
