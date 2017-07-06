@@ -76,6 +76,12 @@ a{
   text-align: center;
 }
 
+.video-link{
+  color: #7AAFC1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .main-nav-link>a{
   color: #7AAFC1;
 }
@@ -84,6 +90,15 @@ a{
   border-bottom: 1px solid #7AAFC1;
 }
 
+.profile-info{
+  border-top: 1px solid #7AAFC1;
+  padding-top: 25px;
+}
+
+.headshot{
+  border-radius: 50%;
+  border: 5px solid #DCEED6;
+}
 
 /*.contact-footer{
   width: 100%;
