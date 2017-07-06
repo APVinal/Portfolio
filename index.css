@@ -3,6 +3,14 @@ body{
   margin: 0px;
 }
 
+.fixed-nav{
+  position: fixed;
+  background: white;
+  width: 100%;
+  overflow: hidden;
+  top:0;
+}
+
 .nav-bar{
   width: 100%;
   background-image: url('./assets/navphoto.jpg');
@@ -24,6 +32,10 @@ body{
 
 .logo>a:hover{
   border-bottom: 1px solid black;
+}
+
+a{
+  text-decoration: none;
 }
 
 .hamburger {
@@ -58,3 +70,26 @@ body{
 .hidden{
   display: none;
 }
+
+.profile-info, .contact-info, .portfolio-info{
+  margin: 125px 20px 0px 35px;
+  text-align: center;
+}
+
+.main-nav-link>a{
+  color: #7AAFC1;
+}
+
+.main-nav-link>a:hover{
+  border-bottom: 1px solid #7AAFC1;
+}
+
+
+/*.contact-footer{
+  width: 100%;
+  height: 60px;
+  background-color: #E7FFFE;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}*/
