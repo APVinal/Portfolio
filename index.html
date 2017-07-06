@@ -4,31 +4,46 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>J. Random Hacker</title>
+        <link href="index.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     </head>
     <body> 
         <header>
-            <h1>J. Random Hacker</h1>
             <nav class="main-nav">
-                <ul>
-                    <li class="main-nav-link"><a href="#about">About me</a></li>
-                    <li class="main-nav-link"><a href="#work">My work</a></li>
-                    <li class="main-nav-link"><a href="#contact">Contact me</a></li>
+              <div class="nav-bar">
+                <div class="logo"><a href="#">J. Random Hacker</a></div>
+                <div class="hamburger">
+                  <div class="hamburger-stripe top-hamburger-stripe"></div>
+                  <div class="hamburger-stripe"></div>
+                  <div class="hamburger-stripe"></div>
+                </div>
+              </div>
+
+                <ul class="nav-bar-content">
+                    <li class="main-nav-link profile"><a href="#about">Profile</a></li>
+                    <li class="main-nav-link portfolio"><a href="#work">Portfolio</a></li>
+                    <li class="main-nav-link contact"><a href="#contact">Contact me</a></li>
                 </ul>
             </nav>
 
-            <img class="headshot" src="http://unsplash.it/150/150"
-                alt="J. Random Hacker headshot">
+            <div class="profile-info">
+              <img class="headshot" src="http://unsplash.it/150/150"
+                  alt="J. Random Hacker headshot">
 
-            <p class="about" id="about">
-                Hi, I'm J. Random Hacker, a full-stack web developer from Nowheresville, USA.  I use React and Node.js to build web apps which leave you with a minty fresh taste in your mouth.  Outside of coding I enjoy watching <a href="https://www.youtube.com/watch?v=6SFNW5F8K9Y">this video</a> on repeat.
-            </p>
-            <nav class="contact-links">
-                <ul>
-                    <li class="contact-link contact-link-email"><a href="mailto:jrandomhacker@example.com">Email</a>
-                    <li class="contact-link contact-link-linkedin"><a href="https://www.linkedin.com">LinkedIn</a>
-                    <li class="contact-link contact-link-github"><a href="https://www.github.com">GitHub</a>
-                </ul>
-            </nav>
+              <p class="about" id="about">
+                  Hi, I'm J. Random Hacker, a full-stack web developer from Nowheresville, USA.  I use React and Node.js to build web apps which leave you with a minty fresh taste in your mouth.  Outside of coding I enjoy watching <a href="https://www.youtube.com/watch?v=6SFNW5F8K9Y">this video</a> on repeat.
+              </p>
+            </div>
+
+            <div class="contact-info">
+              <nav class="contact-links">
+                  <ul>
+                      <li class="contact-link contact-link-email"><a href="mailto:jrandomhacker@example.com">Email</a>
+                      <li class="contact-link contact-link-linkedin"><a href="https://www.linkedin.com">LinkedIn</a>
+                      <li class="contact-link contact-link-github"><a href="https://www.github.com">GitHub</a>
+                  </ul>
+              </nav>
+            </div>
         </header>
         <section class="work" id="work">
             <h2>My work</h2>
@@ -162,5 +177,10 @@
                 <input type="submit" value="Send message">
             </form> 
         </section>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+              integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+              crossorigin="anonymous">
+      </script>
+      <script src='app.js'></script>
     </body>
 </html>

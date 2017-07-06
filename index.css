@@ -1,0 +1,52 @@
+body{
+  font-family: 'Lora', serif;
+  margin: 0px;
+}
+
+.nav-bar{
+  width: 100%;
+  background-image: url('./assets/navphoto.jpg');
+  background-position: 53% 53%;
+  border-bottom: 1px solid #BEE6E0;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo>a{
+  text-decoration: none;
+  color: black;
+  vertical-align: center;
+  font-weight: bold;
+}
+
+.logo>a:hover{
+  border-bottom: 1px solid black;
+}
+
+.hamburger {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border: 1px solid #eeeeef;
+    border-radius: 2px;
+    box-shadow: 0 0 2px #eeeeef;
+    margin-left: 5%;
+}
+
+.hamburger-stripe {
+    background-color: black;
+    height: 3px;
+    margin-bottom: 5px;
+}
+
+.top-hamburger-stripe{
+  margin-top:2.5px;
+}
+
+.nav-bar-content{
+  list-style: none;
+  display: none;
+}
