@@ -1,20 +1,14 @@
 'use strict';
 
 const appState ={
-  contentToggle: false,
   profileToggle: false,
   contactToggle: false,
   portfolioToggle: false
 };
 
-function changeContent(state){
-  if(state.contentToggle){
-    return state.contentToggle = false;
-  }
-  return state.contentToggle = true;
-}
-
 function changeProfile(state){
+  state.portfolioToggle = false;
+  state.contactToggle = false;
   if(state.profileToggle){
     return state.profileToggle = false;
   }
@@ -22,6 +16,8 @@ function changeProfile(state){
 }
 
 function changeContact(state){
+  state.portfolioToggle = false;
+  state.profileToggle = false;
   if(state.contactToggle){
     return state.contactToggle = false;
   }
@@ -29,18 +25,15 @@ function changeContact(state){
 }
 
 function changePortfolio(state){
+  state.profileToggle = false;
+  state.contactToggle = false;
   if(state.portfolioToggle){
     return state.portfolioToggle = false;
   }
   return state.portfolioToggle = true;
 }
 
-function render(state, content, profile, contact, portfolio){
-  if(state.contentToggle){
-    content.removeClass('hidden');
-  }else{
-    content.addClass('hidden');
-  }
+function render(state, profile, contact, portfolio){
   if(state.profileToggle){
     profile.show();
   }else{
@@ -59,25 +52,20 @@ function render(state, content, profile, contact, portfolio){
 }
 
 $(function(){
-  render(appState, $('.nav-bar-selection'), $('.profile-info'), $('.contact-info'), $('.portfolio-info'));
-
-  $('.hamburger').on('click', function(event){
-    changeContent(appState);
-    render(appState, $('.nav-bar-selection'), $('.profile-info'), $('.contact-info'), $('.portfolio-info'));
-  });
+  render(appState, $('.profile-info'), $('.contact-info'), $('.portfolio-info'));
 
   $('.profile').on('click', function(event){
     changeProfile(appState);
-    render(appState, $('.nav-bar-selection'), $('.profile-info'), $('.contact-info'), $('.portfolio-info'));
+    render(appState, $('.profile-info'), $('.contact-info'), $('.portfolio-info'));
   });
 
   $('.contact').on('click', function(event){
     changeContact(appState);
-    render(appState, $('.nav-bar-selection'), $('.profile-info'), $('.contact-info'), $('.portfolio-info'));
+    render(appState, $('.profile-info'), $('.contact-info'), $('.portfolio-info'));
   });
 
   $('.portfolio').on('click', function(event){
     changePortfolio(appState);
-    render(appState, $('.nav-bar-selection'), $('.profile-info'), $('.contact-info'), $('.portfolio-info'));
+    render(appState, $('.profile-info'), $('.contact-info'), $('.portfolio-info'));
   });
 });
