@@ -64,7 +64,6 @@ a{
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  
 }
 
 .hidden{
@@ -100,12 +99,6 @@ a{
   border: 5px solid #DCEED6;
 }
 
-/*.footer{
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-}*/
-
 .default-body{
   margin-top: 125px;
   text-align: center;
@@ -115,5 +108,30 @@ a{
   border-radius: 60%;
   height: 300px;
   width: 300px;
-  padding: 25px;
+  border: 5px solid #DCEED6;
+}
+
+.home-message{
+  margin-top: 15px;
+}
+
+.contact-content{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid #7AAFC1;
+  padding-top: 25px;
+}
+
+.contact-form{
+  border-left: 1px solid #7AAFC1;
+  margin-top: 25px;
+  padding: 15px;
+  display: block;
+}
+
+.project {
+  border-top: 1px solid #7AAFC1;
 }
