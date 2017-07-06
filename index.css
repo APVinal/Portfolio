@@ -1,0 +1,135 @@
+body{
+  font-family: 'Lora', serif;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.fixed-nav{
+  position: fixed;
+  background: white;
+  width: 100%;
+  overflow: hidden;
+  top:0;
+}
+
+.nav-bar{
+  width: 100%;
+  background-image: url('./assets/navphoto.jpg');
+  background-position: 53% 53%;
+  border-bottom: 1px solid #BEE6E0;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo>a{
+  text-decoration: none;
+  color: black;
+  vertical-align: center;
+  font-weight: bold;
+}
+
+.logo>a:hover{
+  border-bottom: 1px solid black;
+}
+
+a{
+  text-decoration: none;
+}
+
+.nav-bar-content{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.profile-info, .contact-info, .portfolio-info{
+  margin: 125px 20px 0px 20px;
+  text-align: center;
+}
+
+.video-link{
+  color: #7AAFC1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main-nav-link>a{
+  color: #7AAFC1;
+}
+
+.main-nav-link>a:hover{
+  border-bottom: 1px solid #7AAFC1;
+}
+
+.profile-info{
+  border-top: 1px solid #7AAFC1;
+  padding-top: 25px;
+}
+
+.headshot{
+  border-radius: 50%;
+  border: 5px solid #DCEED6;
+}
+
+.default-body{
+  margin-top: 125px;
+  text-align: center;
+}
+
+.main-image{
+  border-radius: 60%;
+  height: 300px;
+  width: 300px;
+  border: 5px solid #DCEED6;
+}
+
+.home-message{
+  margin-top: 15px;
+}
+
+.contact-content{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid #7AAFC1;
+  padding-top: 25px;
+}
+
+.contact-form{
+  border-left: 1px solid #7AAFC1;
+  margin-top: 25px;
+  padding: 15px;
+  display: block;
+}
+
+.project {
+  border-top: 1px solid #7AAFC1;
+  padding: 15px;
+}
+
+.project-stack{
+  list-style: none;
+}
+
+.project-stack-item{
+  font-weight: bold;
+}
+
+.project-link{
+  list-style: none;
+}
+
+.project-image{
+  width: 100%;
+}
