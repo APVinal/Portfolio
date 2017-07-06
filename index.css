@@ -1,6 +1,7 @@
 body{
   font-family: 'Lora', serif;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 .fixed-nav{
@@ -51,7 +52,7 @@ a{
 }
 
 .profile-info, .contact-info, .portfolio-info{
-  margin: 125px 20px 0px 35px;
+  margin: 125px 20px 0px 20px;
   text-align: center;
 }
 
@@ -127,4 +128,8 @@ a{
 
 .project-link{
   list-style: none;
+}
+
+.project-image{
+  width: 100%;
 }
