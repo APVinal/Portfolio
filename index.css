@@ -79,10 +79,6 @@ a{
   justify-content: space-around;
 }
 
-.project-stack-item{
-  font-weight: bold;
-}
-
 .project-link{
   list-style: none;
   display: block;
@@ -187,13 +183,11 @@ a{
     flex-grow: 1; 
     flex-basis: 25%;
     border-right: 1px solid #7AAFC1;
-    align-items: center;
-    justify-content: center;
     position: fixed;
     background: #7AAFC1;
     height: 100%;
     margin: auto;
-    padding: 2.5%;
+    padding: 0% 2.5% 2.5% 2.5%;
   }
   
   .site-content{
@@ -207,8 +201,8 @@ a{
   .nav-bar-selection{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-
+    justify-content: center;
+    height: 100%;
   }
 
   .nav-bar-content{
