@@ -50,23 +50,6 @@ a{
   margin-top: 15px;
 }
 
-.contact-content{
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
-  border-top: 1px solid #7AAFC1;
-  padding-top: 25px;
-}
-
-.contact-form{
-  border-left: 1px solid #7AAFC1;
-  margin-top: 25px;
-  padding: 15px;
-  display: block;
-}
-
 .project {
   border-top: 1px solid #7AAFC1;
   padding: 15px;
@@ -168,6 +151,20 @@ a{
     width: 300px;
     border: 5px solid #DCEED6;
   }
+
+  .contact-form{
+    display: none;
+  }
+  
+  .contact-content{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid #7AAFC1;
+    padding-top: 25px;
+  }
 }
 
 @media only screen and (min-width: 576px){
@@ -237,6 +234,31 @@ a{
     height: 350px;
     width: 350px;
     border: 5px solid #DCEED6;
+  }
+
+  .contact-form{
+    border-top: 1px solid #7AAFC1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .message-box{
+    border-left: 1px solid #7AAFC1;
+    border-right: 1px solid #7AAFC1;
+    margin-top: 50px;
+    padding: 15px;
+    display: block;
+  }
+
+  .contact-content{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+    border-top: 1px solid #7AAFC1;
+    padding-top: 25px;
   }
 }
 
