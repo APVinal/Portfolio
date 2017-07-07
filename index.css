@@ -27,7 +27,7 @@ h3{
   height: 65px;
 }
 
-.logo{
+.logo-img{
   height: 64px;
   width: 64px;
   background-image: url('./assets/logo.png');
@@ -167,15 +167,51 @@ a{
   .nav-bar-selection{
     margin-top: 75px;
   }
+
+  .logo-name{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 576px){
-  .nav-bar-selection{
-  display: flex;
-  align-items: center;
-  height: 100%;
+  .main-box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin-top: 5%;
   }
-  .main-nav{
+
+  .nav-flex{
+    flex-basis: 25%;
+    border-right: 1px solid #7AAFC1;
+    align-items: center;
+    position: fixed;
+    background: white;
+    height: 80%;
+    margin: auto;
+    padding: 2.5%;
+  }
+
+  .nav-bar-selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+
+  .nav-bar-content{
+    list-style: none;
+  }
+
+  .fixed-nav{
     display: none;
+  }
+
+  .site-content{
+    padding: 25px;
+    overflow: auto;
+    margin-left: 30%;
   }
 }
