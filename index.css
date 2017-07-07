@@ -22,14 +22,16 @@ h3{
 
 .nav-bar{
   width: 100%;
-  background-image: url('./assets/navphoto.jpg');
-  background-position: 53% 53%;
+  background-color: #7AAFC1;
   border-bottom: 1px solid #BEE6E0;
   height: 65px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
+}
+
+.logo{
+  height: 64px;
+  width: 64px;
+  background-image: url('./assets/logo.png');
+  margin-left: 25px;
 }
 
 .logo>a{

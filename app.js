@@ -87,7 +87,7 @@ $(function(){
     render(appState, $('.profile-info'), $('.contact-info'), $('.portfolio-info'), $('.default-body'));
   });
 
-  $('.logo-default').on('click', function(event){
+  $('.logo').on('click', function(event){
     changeDefault(appState);
     render(appState, $('.profile-info'), $('.contact-info'), $('.portfolio-info'), $('.default-body'));
   });
