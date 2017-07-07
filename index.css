@@ -4,6 +4,14 @@ body{
   box-sizing: border-box;
 }
 
+ul{
+  padding: 0px;
+}
+
+h3{
+  text-decoration: underline;
+}
+
 .fixed-nav{
   position: fixed;
   background: white;
@@ -14,25 +22,16 @@ body{
 
 .nav-bar{
   width: 100%;
-  background-image: url('./assets/navphoto.jpg');
-  background-position: 53% 53%;
+  background-color: #7AAFC1;
   border-bottom: 1px solid #BEE6E0;
   height: 65px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
 }
 
-.logo>a{
-  text-decoration: none;
-  color: black;
-  vertical-align: center;
-  font-weight: bold;
-}
-
-.logo>a:hover{
-  border-bottom: 1px solid black;
+.logo{
+  height: 64px;
+  width: 64px;
+  background-image: url('./assets/logo.png');
+  margin-left: 25px;
 }
 
 a{
@@ -120,6 +119,9 @@ a{
 
 .project-stack{
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .project-stack-item{
@@ -128,8 +130,35 @@ a{
 
 .project-link{
   list-style: none;
+  display: block;
+}
+
+.project-link>a{
+  color: #7AAFC1;
+}
+
+.link-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-left: 1px solid #7AAFC1;
+  border-right: 1px solid #7AAFC1;
 }
 
 .project-image{
   width: 100%;
+}
+
+.fa-envelope{
+  color: #3A6285;
+}
+
+.fa-linkedin{
+  background-color: #0077B5;
+  color: white;
+  width: 64px;
+}
+
+.fa-github{
+  color: black;
 }
