@@ -11,9 +11,6 @@ function changeDefault(state){
   state.portfolioToggle = false;
   state.contactToggle = false;
   state.profileToggle = false;
-  if(state.defaultToggle){
-    return state.defaultToggle = false;
-  }
   return state.defaultToggle = true;
 }
 
@@ -21,9 +18,6 @@ function changeProfile(state){
   state.portfolioToggle = false;
   state.contactToggle = false;
   state.defaultToggle = false;
-  if(state.profileToggle){
-    return state.profileToggle = false;
-  }
   return state.profileToggle = true;
 }
 
@@ -31,9 +25,6 @@ function changeContact(state){
   state.portfolioToggle = false;
   state.profileToggle = false;
   state.defaultToggle = false;
-  if(state.contactToggle){
-    return state.contactToggle = false;
-  }
   return state.contactToggle = true;
 }
 
@@ -41,9 +32,6 @@ function changePortfolio(state){
   state.profileToggle = false;
   state.contactToggle = false;
   state.defaultToggle = false;
-  if(state.portfolioToggle){
-    return state.portfolioToggle = false;
-  }
   return state.portfolioToggle = true;
 }
 
