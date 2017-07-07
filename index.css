@@ -205,8 +205,15 @@ a{
     height: 100%;
   }
 
+  .logo-home{
+    height: 64px;
+    width: 64px;
+    background-image: url('./assets/logo.png');
+  }
+
   .nav-bar-content{
     list-style: none;
+    margin-bottom: 100%;
   }
 
   .main-nav-link{
