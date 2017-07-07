@@ -157,3 +157,17 @@ a{
 .project-image{
   width: 100%;
 }
+
+.fa-envelope{
+  color: #3A6285;
+}
+
+.fa-linkedin{
+  background-color: #0077B5;
+  color: white;
+  width: 64px;
+}
+
+.fa-github{
+  color: black;
+}
