@@ -34,17 +34,6 @@ h3{
   margin-left: 25px;
 }
 
-.logo>a{
-  text-decoration: none;
-  color: black;
-  vertical-align: center;
-  font-weight: bold;
-}
-
-.logo>a:hover{
-  border-bottom: 1px solid black;
-}
-
 a{
   text-decoration: none;
 }
