@@ -38,20 +38,12 @@ a{
   text-decoration: none;
 }
 
-.nav-bar-content{
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
-}
-
 .hidden{
   display: none;
 }
 
 .profile-info, .contact-info, .portfolio-info{
-  margin: 125px 20px 0px 20px;
+  margin: 25px 20px 0px 20px;
   text-align: center;
 }
 
@@ -80,7 +72,7 @@ a{
 }
 
 .default-body{
-  margin-top: 125px;
+  margin-top: 25px;
   text-align: center;
 }
 
@@ -161,4 +153,29 @@ a{
 
 .fa-github{
   color: black;
+}
+
+@media only screen and (max-width: 575px){
+  .nav-bar-content{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-bar-selection{
+    margin-top: 75px;
+  }
+}
+
+@media only screen and (min-width: 576px){
+  .nav-bar-selection{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  }
+  .main-nav{
+    display: none;
+  }
 }
