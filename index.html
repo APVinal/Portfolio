@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>J. Random Hacker</title>
+    <title>Paton Vinal</title>
     <link href="index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,8 +24,8 @@
       <div class="nav-bar-selection">
       <nav>
         <ul class="nav-bar-content">
-          <li class="main-nav-link logo logo-name"><a href="#about">J. Random Hacker</a></li> 
-          <li class="main-nav-link profile"><a href="#about">Profile</a></li>
+          <!--<li class="main-nav-link logo logo-name"><a href="#about">Paton Vinal</a></li> -->
+          <li class="main-nav-link profile"><a href="#about">Paton Vinal</a></li>
           <li class="main-nav-link portfolio"><a href="#work">Portfolio</a></li>
           <li class="main-nav-link contact"><a href="#contact">Contact</a></li>
         </ul>
@@ -35,31 +35,37 @@
     <section class="site-content">
       <section class="profile-info">
         <div>
-          <img class="headshot" src="http://unsplash.it/150/150" alt="J. Random Hacker headshot">
+          <img class="headshot" src="./assets/profile-photo-temp.png" alt="Paton Vinal headshot">
           <p class="about" id="about">
-            Hi, I'm <b>J. Random Hacker</b>, a full-stack web developer from Nowheresville, USA.  I use <b>React</b> and <b>Node.js</b> to build web apps which leave you with a minty fresh taste in your mouth.  Outside of coding I enjoy watching <a class="video-link" href="https://www.youtube.com/watch?v=6SFNW5F8K9Y">this video</a> on repeat.
+            Hi, I’m <b>Paton Vinal</b> a full-stack developer born and raised in the North-East currently based out of <b>Portland, Maine</b>. I’m the son of a carpenter, and have always found the most pleasure out of building things with my own hands. Rather than pursuing the hammer and nail approach of my father, I have taken to building with code. 
+          </p>
+          <p>
+            Prior to getting into coding, I had a business and insurance background. I graduated from University of Maine in Farmington with a Bachelor in Business Economics, helped a fisherman open a new restaurant venture, and after that found myself in the insurance industry working for Acadia Insurance. 
+          </p>
+          <p>
+            After almost five years working in Insurance, I decided it was time to take a leap of faith and pursue a passion of mine, coding. I have not regretted that decision since! Other passions of mine include kayaking, board games, video games, and participating in Tough Mudder events (if you ever feel the desire to be challenged and rewarded with an awe-inspiring level of teamwork between strangers I highly recommend going for a crawl in the mud!).  
           </p>
         </div>
       </section>
       <section class="contact-info">
         <div class="contact-form">
           <div class="message-box">
-            <p>If you have any questions, please don't hesitate to reach out to me.</p>
-            <form action="https://formspree.io/jrandomhacker@example.com" method="POST">
+            <h4>If you have any questions, please drop a note and reach out to me.</h4>
+            <form action="https://formspree.io/jrandomhacker@example.com" method="POST" class='email-form'>
               <label for="contact-form-name">Your Name</label>
               <input type="text" name="name" id="contact-form-name" placeholder="Grace Hopper">
               <label for="contact-form-email">Your Email Address</label>
               <input type="email" name="_replyto" id="contact-form-email" placeholder="grace@example.com"> 
               <label for="contact-form-message">Message</label>
               <textarea name="message" id="contact-form-message"></textarea>
-              <input type="submit" value="Send message">
+              <input type="submit" value="Send message" class='message-submit'>
             </form>
           </div>
         </div>
         <div>
           <nav class="contact-links">
             <ul class="contact-content">
-              <li class="contact-link contact-link-email email"><a href="mailto:jrandomhacker@example.com"><i class="fa fa-envelope" aria-hidden="true" style="font-size:64px;"></i></a>
+              <li class="contact-link contact-link-email email"><a href="mailto:paton.vinal@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="font-size:64px;"></i></a>
               <li class="contact-link contact-link-linkedin linkedin"><a href="https://www.linkedin.com/in/patonvinal/"><i class="fa fa-linkedin" aria-hidden="true" style="font-size:58px;"></i></a>
               <li class="contact-link contact-link-github github"><a href="https://github.com/APVinal"><i class="fa fa-github" aria-hidden="true" style="font-size:64px;"></i></a>
             </ul>
@@ -68,10 +74,41 @@
       <section class="work portfolio-info" id="work">
         <h2>My work</h2>
         <section class="project">
-          <h3>Frobnicator</h3>
-          <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=1" alt="Frobnicator screenshot">
+          <h3>The Quiz Manager</h3>
+          <img class="project-image" src="./assets/quiz-manager.png" alt="Quiz Manager screenshot">
           <p class="project-description">
-            A frob which allows you to frobnicate other frobs.
+            <i>Why the Quiz Manager?</i> 
+              In this day and age, across many industries it has become vital to make sure that your employees are in compliance with federal, state, and company policy. As part of the compliance, tests or readings are often required.</p> 
+            <p>Quiz Manager is an application that allows admins to monitor their list of users and the statuses of the users’ required materials. It also creates a platform for users to view the list of required materials and access the content.
+          </p>
+          <ul class="project-stack">
+            <li class="project-stack-item">
+              <img src='./assets/react-logo.png' alt='React Logo'>
+            </li>
+            <li class="project-stack-item">
+              <img src='./assets/redux-logo.png' alt='Redux Logo'> 
+            </li>
+            <li class="project-stack-item">
+              <img src='./assets/nodejs-logo.png' alt='NodeJS Logo'>
+            </li>
+          </ul>
+          <nav class="project-links">
+            <ul class="link-content">
+              <li class="project-link project-link-live">
+                <a href="https://guiz-manager.herokuapp.com/">Live demo</a>
+              </li>
+              <li class="project-link project-link-github">
+                <a href="https://github.com/APVinal/Quiz-Manager">Source code</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+        <!--<section class="project">
+          <h3>The Big Truck</h3>
+          <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=2" alt="The Big Truck screenshot">
+          <p class="project-description">
+            (This will not be in the final version, it will be replaced with another app)
+            
           </p>
           <ul class="project-stack">
             <li class="project-stack-item">
@@ -94,87 +131,42 @@
               </li>
             </ul>
           </nav>
-        </section>
+        </section>-->
         <section class="project">
-          <h3>FooBar</h3>
-          <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=2" alt="FooBar screenshot">
+          <h3>GOTTA KNOW 'EM ALL</h3>
+          <img class="project-image" src="./assets/gotta-know.png" alt="Gotta Know Em All screenshot">
           <p class="project-description">
-            A foo which allows you to bar other bazes.
+            (This is not a Portfolio project, I am working on a remastered version of this app that has new features and functionalities)
           </p>
           <ul class="project-stack">
             <li class="project-stack-item">
-              <img src='./assets/react-logo.png' alt='React Logo'>
-            </li>
-            <li class="project-stack-item">
-              <img src='./assets/redux-logo.png' alt='Redux Logo'> 
-            </li>
-            <li class="project-stack-item">
-              <img src='./assets/nodejs-logo.png' alt='NodeJS Logo'>
+              JavaScript
             </li>
           </ul>
           <nav class="project-links">
             <ul class="link-content">
               <li class="project-link project-link-live">
-                <a href="#">Live demo</a>
+                <a href="https://thinkful-c11.github.io/Capstone-Paton-Patrice/">Live demo</a>
               </li>
               <li class="project-link project-link-github">
-                <a href="#">Source code</a>
+                <a href="https://github.com/thinkful-c11/Capstone-Paton-Patrice">Source code</a>
               </li>
             </ul>
           </nav>
         </section>
         <section class="project">
-          <h3>AliceBob</h3>
-          <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=3" alt="AliceBob screenshot">
+          <h3>The Big Truck</h3>
+          <img class="project-image" src="./assets/big-truck.png" alt="The Big Truck screenshot">
           <p class="project-description">
-            An Alice which allows you to Bob other Eves.
+            (This is another placeholder, I have a different project idea I would like to use in place of this project.)
           </p>
-          <ul class="project-stack">
-            <li class="project-stack-item">
-              <img src='./assets/react-logo.png' alt='React Logo'>
-            </li>
-            <li class="project-stack-item">
-              <img src='./assets/redux-logo.png' alt='Redux Logo'> 
-            </li>
-            <li class="project-stack-item">
-              <img src='./assets/nodejs-logo.png' alt='NodeJS Logo'>
-            </li>
-          </ul>
           <nav class="project-links">
             <ul class="link-content">
               <li class="project-link project-link-live">
-                <a href="#">Live demo</a>
+                <a href="https://rocky-earth-71145.herokuapp.com/">Live demo</a>
               </li>
               <li class="project-link project-link-github">
-                <a href="#">Source code</a>
-              </li>
-            </ul>
-          </nav>
-        </section>
-        <section class="project">
-          <h3>Wibble</h3>
-          <img class="project-image" src="http://unsplash.it/350/150?random&amp;bust=4" alt="Wibble screenshot">
-          <p class="project-description">
-            A wibble which allows you to wobble other wubbles.
-          </p>
-          <ul class="project-stack">
-            <li class="project-stack-item">
-              <img src='./assets/react-logo.png' alt='React Logo'>
-            </li>
-            <li class="project-stack-item">
-              <img src='./assets/redux-logo.png' alt='Redux Logo'> 
-            </li>
-            <li class="project-stack-item">
-              <img src='./assets/nodejs-logo.png' alt='NodeJS Logo'>
-            </li>
-          </ul>
-          <nav class="project-links">
-            <ul class="link-content">
-              <li class="project-link project-link-live">
-                <a href="#">Live demo</a>
-              </li>
-              <li class="project-link project-link-github">
-                <a href="#">Source code</a>
+                <a href="https://github.com/thinkful-c11/fullstack-capstone-naeem-paton">Source code</a>
               </li>
             </ul>
           </nav>
@@ -182,7 +174,7 @@
       </section>
       <section class="default-body">
         <img class="main-image" src="./assets/islandhor.JPG" alt="default island photo">
-        <div class="home-message">This is our default body, and initial <b>message</b></div>
+        <div class="home-message">Welcome from the <b>East Coast!</b></div>
       </section>
     </section>
     </section>
