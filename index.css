@@ -23,6 +23,7 @@ a{
 .profile-info, .contact-info, .portfolio-info{
   margin: 25px 20px 0px 20px;
   text-align: center;
+  max-width: 800px;
 }
 
 .video-link{
@@ -42,12 +43,14 @@ a{
 }
 
 .default-body{
-  margin-top: 25px;
+  margin: 25px 10px 10px 10px;
   text-align: center;
+  max-width: 800px;
 }
 
 .home-message{
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .project {
@@ -165,6 +168,11 @@ a{
     border-top: 1px solid #7AAFC1;
     padding-top: 25px;
   }
+
+  footer {
+  display: none;
+  }
+
 }
 
 @media only screen and (min-width: 576px){
@@ -234,15 +242,17 @@ a{
   }
 
   .contact-form{
-    border-top: 1px solid #7AAFC1;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
+  .contact-links {
+    display: none;
+  }
+
   .message-box{
-    border-left: 1px solid #7AAFC1;
-    border-right: 1px solid #7AAFC1;
+    border: 1px solid #7AAFC1;
     margin-top: 50px;
     padding: 15px;
     display: block;
@@ -257,6 +267,10 @@ a{
   .message-submit{
     margin: 10px;
     width: 20%;
+    align-self: center;
+    background-color: #DCEED6;
+    font-family: 'Lora', serif;
+    border-radius: 99%;
   }
 
   .contact-content{
@@ -265,10 +279,24 @@ a{
     justify-content: space-around;
     flex-direction: row;
     align-items: flex-end;
-    border-top: 1px solid #7AAFC1;
-    padding-top: 25px;
+    margin: 0px;
   }
 }
+
+body {
+  margin-bottom: 75px;
+}
+
+footer {
+    background-color: #7AAFC1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    overflow:hidden;
+}
+
 
 @media only screen and (min-width: 752px){
   .main-image{
@@ -277,4 +305,23 @@ a{
     width: 450px;
     border: 5px solid #DCEED6;
   }
+
+  .contact-links {
+    display: none;
+  }
+
+  body {
+  margin-bottom: 75px;
+  }
+
+  footer {
+    background-color: #7AAFC1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    overflow:hidden;
+  }
+
 }
