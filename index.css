@@ -281,9 +281,8 @@ a{
     align-items: flex-end;
     margin: 0px;
   }
-}
 
-body {
+  body {
   margin-bottom: 75px;
 }
 
@@ -296,6 +295,9 @@ footer {
     width: 100%;
     overflow:hidden;
 }
+}
+
+
 
 
 @media only screen and (min-width: 752px){
