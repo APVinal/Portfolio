@@ -6,6 +6,7 @@ body{
   font-family: 'Lora', serif;
   margin: 0px;
   display: block;
+  height: 100%;
 }
 
 ul.nav-bar-content{
@@ -36,6 +37,10 @@ p.about{
 
 p.project-description{
   background-color: #F3F3F3;
+}
+
+.wrapper{
+  height: 100%;
 }
 
 .hidden{
@@ -264,10 +269,7 @@ p.project-description{
 
   .main-box{
     display: flex;
-    /*flex-direction: row;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;*/
+    height: calc(100vh - 150px);
   }
   
   .site-content{
@@ -278,7 +280,7 @@ p.project-description{
     overflow: auto;
     justify-content: center;
     border-left: 1px solid #343434;
-    max-height: 80%;
+    height: 100%;
   }
 
   .nav-flex{
@@ -291,23 +293,22 @@ p.project-description{
 
   .nav-bar-selection{
     flex:1;
-    height: 100%;
   }
 
   .nav-bar-content{
     list-style: none;
   }
 
-  .main-nav-link{
+  /*.main-nav-link{
     padding: 5px 0px 5px 0px;
-  }
+  }*/
 
   .main-nav-link>a{
     color: #343434;
   }
 
   .main-nav-link>a:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #343434;
   }
 
   .contact-form{
@@ -373,4 +374,18 @@ p.project-description{
   margin-bottom: 75px;
   }
 
+}
+
+/*Scrollbar styles*/
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E9DCBE;
 }
