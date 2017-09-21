@@ -1,7 +1,11 @@
+header{
+  height: 75px;
+}
+
 body{
   font-family: 'Lora', serif;
   margin: 0px;
-  box-sizing: border-box;
+  display: block;
 }
 
 ul.nav-bar-content{
@@ -16,8 +20,18 @@ a{
   text-decoration: none;
 }
 
+footer{
+  height: 75px;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  overflow: hidden;
+}
+
 p.about{
-  background-color: #F3F3F3;
+  color: #F3F3F3;
 }
 
 p.project-description{
@@ -28,18 +42,15 @@ p.project-description{
   display: none;
 }
 
+/*Look into this as a possible reason*/
 .profile-info, .contact-info, .portfolio-info{
   margin: 25px 20px 0px 20px;
   padding: 5px;
   text-align: center;
   max-width: 800px;
-  background-color: #343434;
-}
-
-.video-link{
-  color: #7AAFC1;
-  text-decoration: none;
-  font-weight: bold;
+  background-color: #8E8B82;
+  display: flex;
+  height: 100%;
 }
 
 .profile-info{
@@ -53,7 +64,6 @@ p.project-description{
 }
 
 .default-body{
-  margin: 25px 10px 10px 10px;
   text-align: left;
   max-width: 800px;
 }
@@ -108,22 +118,6 @@ p.project-description{
 
 .fa-github{
   color: #343434;
-}
-
-.gray-border{
-  border: 5px solid #8E8B82;
-  padding: 5px;
-  /*margin: 5px 5px 5px 5px;*/
-}
-
-.gold-border{
-  border: 5px solid #E9DCBE;
-  padding: 5px;
-}
-
-.white-border{
-  border: 5px solid #F3F3F3;
-  padding: 5px;
 }
 
 @media only screen and (max-width: 575px){
@@ -195,10 +189,6 @@ p.project-description{
     padding-top: 25px;
   }
 
-  footer {
-  display: none;
-  }
-
 }
 
 @media only screen and (min-width: 576px){
@@ -225,8 +215,14 @@ p.project-description{
     font-weight: bold;
   }
 
+  h3.font{
+    color: #F3F3F3;
+  }
+
+/*Possible reason*/
   .default-body {
     overflow: hidden;
+    max-width: 800px;
     height: 500px;
   }
 
@@ -268,42 +264,38 @@ p.project-description{
 
   .main-box{
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
-  }
-
-  .nav-flex{
-    flex-grow: 1; 
-    flex-basis: 25%;
-    border-right: 1px solid #343434;
-    position: fixed;
-    /*background: #7AAFC1;*/
-    height: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding: 0% 2.5% 2.5% 2.5%;
+    box-sizing: border-box;*/
   }
   
   .site-content{
-    flex-grow: 3;
-    flex-basis: 100%;
-    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    padding: 0 5% 0 5%;
+    flex: 0 1 100%;
     overflow: auto;
-    margin-left: 20%;
+    justify-content: center;
+    border-left: 1px solid #343434;
+    max-height: 80%;
+  }
+
+  .nav-flex{
+    display: flex;
+    height: 100%;
+    flex: 0 0 25%;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-bar-selection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex:1;
     height: 100%;
   }
 
   .nav-bar-content{
     list-style: none;
-    margin-bottom: 100%;
   }
 
   .main-nav-link{
@@ -316,13 +308,6 @@ p.project-description{
 
   .main-nav-link>a:hover{
     border-bottom: 1px solid white;
-  }
-
-  .main-image{
-    border-radius: 50%;
-    height: 350px;
-    width: 350px;
-    border: 5px solid #DCEED6;
   }
 
   .contact-form{
@@ -370,19 +355,7 @@ p.project-description{
   margin-bottom: 75px;
 }
 
-footer {
-    background-color: #7AAFC1;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 70px;
-    width: 100%;
-    overflow:hidden;
 }
-}
-
-
-
 
 @media only screen and (min-width: 752px){
   .main-image{
@@ -398,16 +371,6 @@ footer {
 
   body {
   margin-bottom: 75px;
-  }
-
-  footer {
-    background-color: #7AAFC1;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: 70px;
-    width: 100%;
-    overflow:hidden;
   }
 
 }
