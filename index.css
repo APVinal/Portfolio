@@ -65,7 +65,6 @@ p.project-description{
 }
 
 .project {
-  border-top: 1px solid #7AAFC1;
   padding: 15px;
 }
 
@@ -207,16 +206,11 @@ p.project-description{
   }
 
   p.skills {
-    margin-top: 45px;
+    margin-top: 60px;
     color: #343434;
     font-weight: bold;
   }
 
-  h3.font{
-    color: #F3F3F3;
-  }
-
-/*Possible reason*/
   .default-body {
     overflow: hidden;
     max-width: 800px;
@@ -337,13 +331,17 @@ p.project-description{
     border-radius: 99%;
   }
 
+  .contact-info, .contact {
+    display: none;
+  }
+
   .contact-content{
     list-style: none;
     display: flex;
     padding: 0px;
     flex-direction: row;
     align-items: flex-end;
-    margin: 55px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
   }
 
   li.contact-link {
