@@ -48,6 +48,10 @@ p.project-description{
   height: 100%;
 }
 
+.portfolio-info{
+  flex-direction: column;
+}
+
 .headshot{
   border: 5px solid #E9DCBE;
   float: left;
@@ -81,15 +85,13 @@ p.project-description{
 }
 
 .project-link>a{
-  color: #7AAFC1;
+  color: #8E8B82;
 }
 
 .link-content{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border-left: 1px solid #7AAFC1;
-  border-right: 1px solid #7AAFC1;
 }
 
 .project-image{
