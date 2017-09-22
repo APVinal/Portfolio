@@ -1,5 +1,6 @@
 header{
   height: 75px;
+  background-color: white;
 }
 
 body{
@@ -7,6 +8,7 @@ body{
   margin: 0px;
   display: block;
   height: 100%;
+  background-image: url(data:image/svg+xml;base64,CiAgPHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIAk8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPScjMzQzNDM0Jy8+CgkJPHJlY3Qgd2lkdGg9JzEwMDAlJyBoZWlnaHQ9JzEwMDAlJyBmaWxsPScjOEU4QjgyJyB0cmFuc2Zvcm09J3JvdGF0ZSgtMTApJy8+CgkJPHJlY3Qgd2lkdGg9JzEwMDAlJyBoZWlnaHQ9JzEwMDAlJyBmaWxsPScjRTlEQ0JFJyB0cmFuc2Zvcm09J3JvdGF0ZSgtMjApJy8+CgkJPHJlY3Qgd2lkdGg9JzEwMDAlJyBoZWlnaHQ9JzEwMDAlJyBmaWxsPScjZjNmM2YzJyB0cmFuc2Zvcm09J3JvdGF0ZSgtMzApJy8+CgkJPHJlY3Qgd2lkdGg9JzEwMDAlJyBoZWlnaHQ9JzEwMDAlJyBmaWxsPScjZmZmJyB0cmFuc2Zvcm09J3JvdGF0ZSgtNDApJy8+CgkJPHJlY3Qgd2lkdGg9JzEwMDAlJyBoZWlnaHQ9JzEwMDAlJyBmaWxsPScjZjNmM2YzJyB0cmFuc2Zvcm09J3JvdGF0ZSgtNTApJy8+CgkJPHJlY3Qgd2lkdGg9JzEwMDAlJyBoZWlnaHQ9JzEwMDAlJyBmaWxsPScjRTlEQ0JFJyB0cmFuc2Zvcm09J3JvdGF0ZSgtNjApJy8+CgkJPHJlY3Qgd2lkdGg9JzEwMDAlJyBoZWlnaHQ9JzEwMDAlJyBmaWxsPScjOEU4QjgyJyB0cmFuc2Zvcm09J3JvdGF0ZSgtNzApJy8+CgkJPHJlY3Qgd2lkdGg9JzEwMDAlJyBoZWlnaHQ9JzEwMDAlJyBmaWxsPScjMzQzNDM0JyB0cmFuc2Zvcm09J3JvdGF0ZSgtODApJy8+CiAgPC9zdmc+);
 }
 
 ul.nav-bar-content{
@@ -29,6 +31,7 @@ footer{
   left: 0;
   position: fixed;
   overflow: hidden;
+  background-color: white;
 }
 
 p.about{
@@ -53,7 +56,7 @@ p.project-description{
   padding: 5px;
   text-align: center;
   max-width: 800px;
-  background-color: #8E8B82;
+  /*background-color: #8E8B82;*/
   display: flex;
   height: 100%;
 }
@@ -281,6 +284,7 @@ p.project-description{
     justify-content: center;
     border-left: 1px solid #343434;
     height: 100%;
+    background-color: white;
   }
 
   .nav-flex{
@@ -289,6 +293,7 @@ p.project-description{
     flex: 0 0 25%;
     align-items: center;
     justify-content: center;
+    background-color: white;
   }
 
   .nav-bar-selection{
@@ -299,9 +304,12 @@ p.project-description{
     list-style: none;
   }
 
-  /*.main-nav-link{
-    padding: 5px 0px 5px 0px;
-  }*/
+  li.main-nav-link{
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+  }
 
   .main-nav-link>a{
     color: #343434;
@@ -309,6 +317,7 @@ p.project-description{
 
   .main-nav-link>a:hover{
     border-bottom: 1px solid #343434;
+    font-size: 25px;
   }
 
   .contact-form{
