@@ -110,24 +110,24 @@ p.project-description{
     border-top: 1px solid #343434;
   }
 
-  h1 {
+  h1{
     margin: 15% 0px 25px 0px;
     font-size: 45px;
   }
 
-  p.title {
+  p.title{
     font-size: 25px;
     background-color: white;
     margin: 0px 0px 15px 0px;
   }
 
-  p.quote {
+  p.quote{
     color: #343434;
     font-style: italic;
     margin-top: 25px;
   }
 
-  p.skills {
+  p.skills{
     margin-top: 60px;
     color: #343434;
     font-weight: bold;
@@ -206,36 +206,40 @@ p.project-description{
     background-color: white;
   }
 
-  h1 {
+  body{
+    margin-bottom: 75px;
+  }
+
+  h1{
     margin: 15% 0px 25px 0px;
     font-size: 50px;
   }
 
-  p.title {
+  p.title{
     font-size: 35px;
     background-color: white;
     margin: 0px 0px 15px 0px;
   }
 
-  p.quote {
+  p.quote{
     color: #343434;
     font-style: italic;
     margin-top: 25px;
   }
 
-  p.skills {
+  p.skills{
     margin-top: 60px;
     color: #343434;
     font-weight: bold;
   }
 
-  .default-body {
+  .default-body{
     overflow: hidden;
     max-width: 800px;
     height: 500px;
   }
 
-  .white {
+  .white{
     width: 1000px;
     height: 75px;;
     top: 35px;
@@ -244,7 +248,7 @@ p.project-description{
     background-color: #F3F3F3;
   }
 
-  .gold {
+  .gold{
     width: 1000px;
     height: 75px;
     top: -5%;
@@ -253,7 +257,7 @@ p.project-description{
     background-color: #E9DCBE;
   }
 
-  .gray {
+  .gray{
     width: 1000px;
     height: 75px;
     top: -5%;
@@ -262,7 +266,7 @@ p.project-description{
     background-color: #8E8B82;
   }
 
-  .black {
+  .black{
     width: 1000px;
     height: 100px;
     top: -5%;
@@ -349,7 +353,7 @@ p.project-description{
     border-radius: 99%;
   }
 
-  .contact-info, .contact {
+  .contact-info, .contact{
     display: none;
   }
 
@@ -372,26 +376,22 @@ p.project-description{
     display: none;
   }
 
-  li.contact-link {
+  li.contact-link{
     padding-right: 55px;
-  }
-
-  body {
-  margin-bottom: 75px;
   }
 
 }
 
 /*Scrollbar styles*/
-::-webkit-scrollbar {
+::-webkit-scrollbar{
   width: 12px;
   height: 12px;
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track{
   display: none;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
   background: #E9DCBE;
 }
