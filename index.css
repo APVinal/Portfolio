@@ -5,10 +5,6 @@ body{
   height: 100%;
 }
 
-ul.nav-bar-content{
-  padding: 0px;
-}
-
 h3{
   text-decoration: underline;
 }
@@ -28,6 +24,10 @@ footer{
   background-color: white;
 }
 
+ul.nav-bar-content{
+  padding: 0px;
+}
+
 p.about{
   color: #343434;
 }
@@ -40,7 +40,7 @@ p.project-description{
   display: none;
 }
 
-.profile-info, .contact-info, .portfolio-info{
+.profile-info, .portfolio-info{
   text-align: left;
   max-width: 800px;
   display: flex;
@@ -323,38 +323,6 @@ p.project-description{
   .main-nav-link>a:hover{
     border-bottom: 1px solid #343434;
     font-size: 25px;
-  }
-
-  .contact-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .message-box{
-    border: 1px solid #7AAFC1;
-    margin-top: 50px;
-    padding: 15px;
-    display: block;
-  }
-
-  .email-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .message-submit{
-    margin: 10px;
-    width: 20%;
-    align-self: center;
-    background-color: #DCEED6;
-    font-family: 'Lora', serif;
-    border-radius: 99%;
-  }
-
-  .contact-info, .contact{
-    display: none;
   }
 
   .contact-content{
