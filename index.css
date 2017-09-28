@@ -159,6 +159,7 @@ p.about{
 
   .default-body{
     max-height: 500px;
+    text-align: center;
   }
 
   .site-content{
