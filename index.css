@@ -47,11 +47,6 @@ p.about{
   flex-direction: column;
 }
 
-.default-body{
-  text-align: left;
-  max-width: 800px;
-}
-
 .project {
   padding: 15px;
 }
@@ -234,6 +229,7 @@ p.about{
     overflow: hidden;
     max-width: 800px;
     height: 500px;
+    text-align: left;
   }
 
   .white{
