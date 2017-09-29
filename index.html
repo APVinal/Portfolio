@@ -8,7 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">  
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script src='app.js'></script>
   </head>
   <body>
     <header>
@@ -56,8 +61,6 @@
             <img class="project-image" src="./assets/wasteland.png" alt="Wasteland screenshot">
             <p class="project-description">Wasteland is a 2-D sidescroller built using HTML5 and Phaser. As a group of gamers, we were highly motivated to learn a new language and use our three weeks to create a game. Wasteland is a twist on the typical platformer, the player navigates three different levels where they need to collect pigs to gain additional lives and batteries to keep their light strong. As the timer counts down, so does a radius of light that allows the player vision. Once the timer hits zero the player loses. While navigating the level the player also needs to avoid an assortment of enemies that will take a life and reset the player.</p>
             <p class="project-description"><b>Project Stack:</b> Phaser, Javascript, NodeJS, Express, MongoDB, Mongoose, Mlab, Heroku.</p>
-            <p class="project-description"><b>Partners:</b> Jamie Wang, Kyle Szeto, and Nick Jones</p>
-            <p class="project-description"><b>Project Length:</b> 3 Weeks.</p>
             <nav class="project-links">
               <ul class="link-content">
                 <li class="project-link project-link-live">
@@ -75,8 +78,6 @@
             <p class="project-description">Seekhana is an application created to teach English speakers the basics of Hindi, the current state focuses on the hindi alphabet. The primary goal of this application was to work with a partner and create a spaced repetition algorithm.</p>
             <p class="project-description"><b>The Algorithm:</b> All questions start with a multiplier of 1. When a user answers a question incorrectly the multiplier is divided by 1.7, whereas if they answer correctly it is multiplied by 1.7 with a cap at 1. We came to this value through testing, it felt like the right number of places to guarantee the user sees the question again sooner than one answered correctly, but it's far enough in where the user won't just remember the question. This multiplier is then multiplied against a moveFactor that is a value equal to the lesson length less a random value between 1 and 5, and moved that many places forward into the lesson.</p>
             <p class="project-description"><b>Project Stack:</b> React, NodeJS, MongoDB, Express, Heroku.</p>
-            <p class="project-description"><b>Partner: </b>William Martin.</p>
-            <p class="project-description"><b>Project Length:</b> 1 Week.</p>
             <nav class="project-links">
               <ul class="link-content">
                 <li class="project-link project-link-live">
@@ -94,8 +95,6 @@
             <p class="project-description">Quiz Manager is an application that allows admins to monitor their list of users and the statuses of the users’ required materials. It also creates a platform for users to view the list of required materials and access the content.</p>
             <p class="project-description">To log into the demo as an admin use the username: <b>Admin</b> and password: <b>test-password</b>. To log in as a user use the username: <b>UserOne</b> and password: <b>test-password</b>.</p>
             <p class="project-description"><b>Project Stack:</b> React, Redux, Node, Express, Mongoose, MongoDB</p>
-            <p class="project-description"><b>Partner:</b> Jonathan Fitzgibbon.</p>
-            <p class="project-description"><b>Project Length:</b> 1 Week.</p>
             <nav class="project-links">
               <ul class="link-content">
                 <li class="project-link project-link-live">
@@ -114,8 +113,6 @@
               Gotta Know 'Em all was a two day project I worked on with a partner where we needed to use and API and JQuery to do searches. We created this website to demonstrate this allowing users to search a Pokemon API based upon the Pokemon's name or ability. From there the user can learn more information on the abilities or pokemon. 
             </p>
             <p class="project-description"><b>Stack:</b> JQuery, CSS, HTML</p>
-            <p class="project-description"><b>Partner:</b> Patrice White.</p>
-            <p class="project-description"><b>Project Length:</b> 2 Days.</p>
             <nav class="project-links">
               <ul class="link-content">
                 <li class="project-link project-link-live">
@@ -150,11 +147,6 @@
         </section>
       </section>
     </section>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous">
-    </script>
-    <script src='app.js'></script>
   </body>
   <footer>
     <ul class="footer-content">
