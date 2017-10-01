@@ -5,10 +5,6 @@ body{
   height: 100%;
 }
 
-h3{
-  text-decoration: underline;
-}
-
 a{
   text-decoration: none;
 }
@@ -51,20 +47,29 @@ p.about{
   padding: 15px;
 }
 
+.project-description{
+  color: #8E8B82;
+  line-height: 175%;
+}
+
 .project-stack{
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  color: #343434;
 }
 
 .project-link{
   list-style: none;
   display: block;
+  margin-top: 15px;
 }
 
 .project-link>a{
-  color: #8E8B82;
+  color: #343434;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .link-content{
@@ -203,6 +208,12 @@ p.about{
   h1{
     margin: 15% 0px 25px 0px;
     font-size: 50px;
+  }
+
+  h3{
+    font-style: italic;
+    font-size: 35px;
+    text-align: center;
   }
 
   p.title{
