@@ -339,7 +339,7 @@ p.about{
   .headshot{
     border: 5px solid #E9DCBE;
     float: left;
-    margin: 25px;
+    margin: 15px 25px 25px 0;
   }
 
   .footer-content{
